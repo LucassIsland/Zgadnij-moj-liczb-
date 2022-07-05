@@ -22,7 +22,7 @@ let highScore = 0;
 document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.message').textContent =
-    'Jaką liczbę mam na myśli...';
+    'Jaką liczbę mam na myśli... Wpisz swoją propozycję w prostokąt po lewej';
   document.querySelector('.guess').value = '';
   score = 20;
   document.querySelector('.score').textContent = score;
@@ -47,7 +47,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else if (guess > secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Nie, za wysoka ;)';
+      document.querySelector('.message').textContent = 'Niestety... za wysoka, próbuje dalej ;)';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
@@ -59,7 +59,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else if (guess < secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Nie, za niska ;)';
+      document.querySelector('.message').textContent = 'Za niska, próbuj dalej ;)';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
