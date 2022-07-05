@@ -22,7 +22,7 @@ let highScore = 0;
 document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.message').textContent =
-    'Jaką liczbę mam na myśli... Wpisz swoją propozycję w prostokąt po lewej';
+    'Jaką liczbę mam na myśli... Wpisz swoją propozycję w prostokąt po lewej stronie.';
   document.querySelector('.guess').value = '';
   score = 20;
   document.querySelector('.score').textContent = score;
