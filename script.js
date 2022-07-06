@@ -30,7 +30,7 @@ document.querySelector('.check').addEventListener('click', function () {
   if (!guess) {
     displayMessage('📛 Nie wpisałaś żadnej liczny :)');
   } else if (guess === secretNumber) {
-    displayMessage('❤ Poprawna odpowiedź!');
+    displayMessage('🏆 Poprawna odpowiedź!');
     displayNumber(secretNumber);
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
